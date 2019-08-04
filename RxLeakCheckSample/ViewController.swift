@@ -7,14 +7,31 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
-class ViewController: UIViewController {
-
+final class ViewController: UIViewController {
+    
+    private let disposeBag = DisposeBag()
+    
+    @IBOutlet weak var aButton: UIButton!
+    @IBOutlet weak var bButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        aButton.rx.tap
+            .subscribe(onNext: { [weak self] in
+                let vc = MemoryLeakViewController.make()
+                self?.present(UINavigationController(rootViewController: vc), animated: true, completion: nil)
+            })
+            .disposed(by: disposeBag)
+        
+        bButton.rx.tap
+            .subscribe(onNext: { [weak self] in
+                let vc = NormalViewController.make()
+                self?.present(UINavigationController(rootViewController: vc), animated: true, completion: nil)
+            })
+            .disposed(by: disposeBag)
     }
-
-
 }
-

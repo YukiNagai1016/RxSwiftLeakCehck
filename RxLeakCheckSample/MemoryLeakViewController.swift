@@ -2,8 +2,8 @@
 //  MemoryLeakViewController.swift
 //  LeakCheckDemo
 //
-//  Created by yusuke takahashi on 2018/08/25.
-//  Copyright © 2018年 corin8823. All rights reserved.
+//  Created by 優樹永井 on 2019/07/26.
+//  Copyright © 2019 com.nagai. All rights reserved.
 //
 
 import UIKit

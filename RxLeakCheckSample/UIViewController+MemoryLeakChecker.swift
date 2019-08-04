@@ -2,8 +2,8 @@
 //  UIViewController+MemoryLeakChecker.swift
 //  LeakCheckDemo
 //
-//  Created by corin8823 on 2018/08/25.
-//  Copyright © 2018年 corin8823. All rights reserved.
+//  Created by 優樹永井 on 2019/07/26.
+//  Copyright © 2019 com.nagai. All rights reserved.
 //
 
 import UIKit
@@ -26,8 +26,8 @@ extension UIViewController {
 private extension UIViewController {
 
     func checkLeak(afterDelay delay: TimeInterval = 1.5) {
-        if isMovingFromParentViewController || rootParentViewController.isBeingDismissed {
-            let reason = isMovingFromParentViewController ? "removed from its parent" : "dismissed"
+        if isMovingFromParent || rootParentViewController.isBeingDismissed {
+            let reason = isMovingFromParent ? "removed from its parent" : "dismissed"
             DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
                 if let wself = self {
                     #if DEBUG

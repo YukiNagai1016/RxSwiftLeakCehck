@@ -1,0 +1,6 @@
+framework module Pods_RxLeakCheckSample {
+  umbrella header "Pods-RxLeakCheckSample-umbrella.h"
+
+  export *
+  module * { export * }
+}

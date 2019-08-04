@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C942C0A63A476D4A40224D5 /* Pods_RxLeakCheckSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707E4E9C46F96181BA347132 /* Pods_RxLeakCheckSample.framework */; };
 		EF64CDC122EA107F00809F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64CDC022EA107F00809F6B /* AppDelegate.swift */; };
 		EF64CDC322EA107F00809F6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64CDC222EA107F00809F6B /* ViewController.swift */; };
 		EF64CDC622EA107F00809F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF64CDC422EA107F00809F6B /* Main.storyboard */; };
 		EF64CDC922EA107F00809F6B /* RxLeakCheckSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF64CDC722EA107F00809F6B /* RxLeakCheckSample.xcdatamodeld */; };
 		EF64CDCB22EA108100809F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF64CDCA22EA108100809F6B /* Assets.xcassets */; };
 		EF64CDCE22EA108100809F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF64CDCC22EA108100809F6B /* LaunchScreen.storyboard */; };
+		EF64CDD622EA112C00809F6B /* MemoryLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64CDD522EA112C00809F6B /* MemoryLeakViewController.swift */; };
+		EF64CDD822EA113100809F6B /* MemoryLeakViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF64CDD722EA113100809F6B /* MemoryLeakViewController.storyboard */; };
+		EF64CDDA22EA113500809F6B /* NormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64CDD922EA113500809F6B /* NormalViewController.swift */; };
+		EF64CDDC22EA113800809F6B /* NormalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF64CDDB22EA113800809F6B /* NormalViewController.storyboard */; };
+		EF64CDDE22EA113E00809F6B /* UIViewController+MemoryLeakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64CDDD22EA113E00809F6B /* UIViewController+MemoryLeakChecker.swift */; };
+		EF64CDE022EA114200809F6B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64CDDF22EA114200809F6B /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24FD393929B3224597168058 /* Pods-RxLeakCheckSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLeakCheckSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxLeakCheckSample/Pods-RxLeakCheckSample.debug.xcconfig"; sourceTree = "<group>"; };
+		707E4E9C46F96181BA347132 /* Pods_RxLeakCheckSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxLeakCheckSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F44B743ACABF27B95CA8AD2 /* Pods-RxLeakCheckSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLeakCheckSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxLeakCheckSample/Pods-RxLeakCheckSample.release.xcconfig"; sourceTree = "<group>"; };
 		EF64CDBD22EA107F00809F6B /* RxLeakCheckSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxLeakCheckSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF64CDC022EA107F00809F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF64CDC222EA107F00809F6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +34,12 @@
 		EF64CDCA22EA108100809F6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF64CDCD22EA108100809F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF64CDCF22EA108100809F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF64CDD522EA112C00809F6B /* MemoryLeakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryLeakViewController.swift; sourceTree = "<group>"; };
+		EF64CDD722EA113100809F6B /* MemoryLeakViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MemoryLeakViewController.storyboard; sourceTree = "<group>"; };
+		EF64CDD922EA113500809F6B /* NormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalViewController.swift; sourceTree = "<group>"; };
+		EF64CDDB22EA113800809F6B /* NormalViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NormalViewController.storyboard; sourceTree = "<group>"; };
+		EF64CDDD22EA113E00809F6B /* UIViewController+MemoryLeakChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MemoryLeakChecker.swift"; sourceTree = "<group>"; };
+		EF64CDDF22EA114200809F6B /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C942C0A63A476D4A40224D5 /* Pods_RxLeakCheckSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E45403CBBF28563287BD4D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24FD393929B3224597168058 /* Pods-RxLeakCheckSample.debug.xcconfig */,
+				8F44B743ACABF27B95CA8AD2 /* Pods-RxLeakCheckSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B3AE856B60E2D393EC4F0A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				707E4E9C46F96181BA347132 /* Pods_RxLeakCheckSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF64CDB422EA107F00809F6B = {
 			isa = PBXGroup;
 			children = (
 				EF64CDBF22EA107F00809F6B /* RxLeakCheckSample */,
 				EF64CDBE22EA107F00809F6B /* Products */,
+				4E45403CBBF28563287BD4D5 /* Pods */,
+				5B3AE856B60E2D393EC4F0A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +95,12 @@
 				EF64CDC022EA107F00809F6B /* AppDelegate.swift */,
 				EF64CDC222EA107F00809F6B /* ViewController.swift */,
 				EF64CDC422EA107F00809F6B /* Main.storyboard */,
+				EF64CDDF22EA114200809F6B /* ViewModel.swift */,
+				EF64CDDD22EA113E00809F6B /* UIViewController+MemoryLeakChecker.swift */,
+				EF64CDD522EA112C00809F6B /* MemoryLeakViewController.swift */,
+				EF64CDD722EA113100809F6B /* MemoryLeakViewController.storyboard */,
+				EF64CDD922EA113500809F6B /* NormalViewController.swift */,
+				EF64CDDB22EA113800809F6B /* NormalViewController.storyboard */,
 				EF64CDCA22EA108100809F6B /* Assets.xcassets */,
 				EF64CDCC22EA108100809F6B /* LaunchScreen.storyboard */,
 				EF64CDCF22EA108100809F6B /* Info.plist */,
@@ -74,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF64CDD222EA108100809F6B /* Build configuration list for PBXNativeTarget "RxLeakCheckSample" */;
 			buildPhases = (
+				68BA78195BEA5522DB7816DE /* [CP] Check Pods Manifest.lock */,
 				EF64CDB922EA107F00809F6B /* Sources */,
 				EF64CDBA22EA107F00809F6B /* Frameworks */,
 				EF64CDBB22EA107F00809F6B /* Resources */,
+				A549579C03E988AEAD705BAB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +171,54 @@
 			files = (
 				EF64CDCE22EA108100809F6B /* LaunchScreen.storyboard in Resources */,
 				EF64CDCB22EA108100809F6B /* Assets.xcassets in Resources */,
+				EF64CDDC22EA113800809F6B /* NormalViewController.storyboard in Resources */,
 				EF64CDC622EA107F00809F6B /* Main.storyboard in Resources */,
+				EF64CDD822EA113100809F6B /* MemoryLeakViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68BA78195BEA5522DB7816DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxLeakCheckSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A549579C03E988AEAD705BAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxLeakCheckSample/Pods-RxLeakCheckSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxLeakCheckSample/Pods-RxLeakCheckSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF64CDB922EA107F00809F6B /* Sources */ = {
@@ -140,7 +227,11 @@
 			files = (
 				EF64CDC922EA107F00809F6B /* RxLeakCheckSample.xcdatamodeld in Sources */,
 				EF64CDC322EA107F00809F6B /* ViewController.swift in Sources */,
+				EF64CDDE22EA113E00809F6B /* UIViewController+MemoryLeakChecker.swift in Sources */,
+				EF64CDD622EA112C00809F6B /* MemoryLeakViewController.swift in Sources */,
+				EF64CDDA22EA113500809F6B /* NormalViewController.swift in Sources */,
 				EF64CDC122EA107F00809F6B /* AppDelegate.swift in Sources */,
+				EF64CDE022EA114200809F6B /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,11 +375,13 @@
 		};
 		EF64CDD322EA108100809F6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24FD393929B3224597168058 /* Pods-RxLeakCheckSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZMM4WWA6BY;
 				INFOPLIST_FILE = RxLeakCheckSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,11 +395,13 @@
 		};
 		EF64CDD422EA108100809F6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F44B743ACABF27B95CA8AD2 /* Pods-RxLeakCheckSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZMM4WWA6BY;
 				INFOPLIST_FILE = RxLeakCheckSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
